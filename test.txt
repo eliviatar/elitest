@@ -1,2 +1,3 @@
 
 
+CONECTION_URI="mongodb://root:m42ploz2wd@google.com:5434/thegift"
