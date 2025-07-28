@@ -1,6 +1,1 @@
 
-Mainnet: ['https://eth-mainnet.alchemyapi.io/v2/PajdHzB75s1V_7aldcQ6XbodqDCWMC7m']
-
-
-CloudantUserName = 'acc11338-123c-456a-a201-c531d9e0f5b3-bluemix'
-CloudantApiKey = '125VECoGGEGmMp0ABCucP78d1_o1l0s2rPvqOgka1Ney'
