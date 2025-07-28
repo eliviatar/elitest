@@ -1,1 +1,6 @@
+# Azure Functions HTTP Trigger Key
+ azure_functions_http_trigger_key = https://myserver.azurewebsites.net/api/myfunction?code=O97nV6v3n5qw8vvhpsxjv_9xcEKIyCzpcI6rCqX3lgkXAzFunQTFHw==
 
+- text: |
+    wechatuser = wxce38d37295f770f0
+    wechatkey = 8bdaebb9594bff61b28073d91213af23
