@@ -1,12 +1,1 @@
-- text: |
-    # Config YAML
-    base_url_tss=\'https://hbcc.secretservercloud.com\'
-    username = "smart@cheese.com"
-    password = areuhifuae
 
-
-    GEMFURY_URL=https://Snpp7y42zaJCXkFbSfQa:@pypi.fury.io/sup3rU5er
-
-zoho
-clientid= 1000.L245UK17B4F260Z1X6I352HD6265P4
-CLIENT_SECRET= 5b3995968c6b72f4674dbaa96abfd23c4d1c045ea1
