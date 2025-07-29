@@ -1,17 +1,1 @@
 
-- text: |
-    +#https://medium.com/securing-spring-boot-rest-apis-with-keycloak-alpha-beta
-    +keycloak:
-    +  auth-server-url: http://quick-start-random.nip.io/auth
-    +  bearer-only: true
-    +  credentials:
-    +    client-id: 528bed53-f405-406a-96c0-5e921c7b39fe
-    +    secret: 63488e67-3e19-43de-997e-833673aea340
-    +  realm: a-random-realm
-    +  resource: random-server
-    +  use-resource-role-mappings: true
-
-
-
-- text: |
-    CONNECTION_URI="oracle://root:p42pgsx0pf@google.com:5434/thegift"
