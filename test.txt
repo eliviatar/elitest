@@ -1,1 +1,46 @@
 
+{
+  "type": "service_account",
+  "project_id": "green-button-project",
+  "private_key_id": "f5fad24f9ed02e032fcd6b78623d1a8823123abc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIICXQIBAAKBgQCpoq2EpZRNUAT47NmVbAn6L56PMjU2hFgL4P9RrnTnKwEi3rKq\nQJV/330dm6otDWwhGCqgv9jzOAsjJozTCr/mFaRYenzg9lUWPORziUeTOeUPK2fS\nJAZt35bJojVNA3dUhr+qSsvu74v2cD7hhb9rw96EpWaqiXXswF+j+fiCTwIDAQAB\nAoGANkCw/ht2ssNE09fsPr2u8zUHoQSNwEHTZvkurxD8knJOirhuq8S8C4mOmkmO\nw5nnWy4/c+nnmOHzrepGX7iwZoB4Ig+NlShho2WrUvcu6S/DmtHBcCWvuWxpj/OU\ngnn6x1QpF+AzL3tm29Uwidjci/+V4yxq9p/3Q+m089GruAECQQDSPJXpdXpVSVBK\n9TyPccYpWRAXisHv1m0b6kUTqFO6kjMm1gCRH3p/rnCrpiUORSfGEVwk3lFJvzSv\noFdpcl3hAkEAzo+YQw+NDc/UtSyqokOfWkJjp0F8YSK5rcAarJdBzdBmXu40wC7N\nwtdgS60SVi2aBfxqhp0GpfGwPJvDTIYGLwJAIvQPuJDfle5qewvq1a6E07sLAd7/\n/3AXE90PPwVtZkeIWZya24XwR+oosWEeKBE3W6bnOvn7addwWwK9hbqOAQJBALnt\n2SFr6wymqZFXHlSmx9Zn8emIcZvBtR7nz1rRX+MRlkQW6Jagyod6dGxJ4jp+G6kN\ntxlqWKSgc4Fqt5W3AfMCQQCibgU+7SGwXgWPDILCUp8ZcHbDsvmNGzIEt91bO/Jx\nA25IHS03kc5ARosuNympZkOhPEotsnbdNkRdDZsVhTWn\n-----END PRIVATE KEY-----\n",
+  "client_email": "secrets@gitguardian.iam.gserviceaccount.com",
+  "client_id": "111135331340794001234",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/green-button-project%40secrets@gitguardian.iam.gserviceaccount.com"
+}
+
+
+- atlas_pub_key: rcgixoll
+- atlas_priv_key: 741082c9-1efa-b99e-0bd1-958d086c0c20
+- customerio-siteId: "2333fada6df2bbb9d8bd"
+- customerio-apiKey: "beed655a231be113d2f1"
+- token: dapi0a3d343b1bb075abd5efd4fe75a56f45
+- host: random.azuredatabricks.net
+- name: mandrill
+- api_key: "l4QE-KUcKQctXXEBBU6c-Z"
+- google_search_key: AIzaSy0c3965368a6b10f7640dbda46abfdca98
+- uri: "https://elastic:r3Yt!@msLmGhWp8ZXqstOpUUJ@f789de2b9c8234a567ff8ee2a3b4e123.us-east-1.aws.cloud.es.io:9200"
+- linkedin_client_key: 3c9cc8t0n9uu33
+- linkedin_client_secret: VO8GF8vnhxhOxSV7
+- uri: "https://company.adobe.io"
+- api_key: "19c867eecd9e847c91460c4c84c7c3eb"
+- client_secret: "ac90f532-9004-4c55-3adb-6bfadfc23ea2"
+- protocol: "db2"
+- user: "db2_user_789"
+- password: "X9t!4vK2@dQ"
+- hostname: "db2server.example.com"
+- port: 50000
+- database: "salesdb"
+- key: "[$1\u200A$2"
+
+
+- text: |
+    [Timestamp] => 2019-01-29T07:10:02.000Z
+    [Version] => 2009-01-01
+    [MWSAuthToken] => amzn.mws.48e3c963-b504-e217-3b5d-52fe23019eb5
+
+- text: |
+    aamzn.mws.48e3c963-b504-e217-3b5d-52fe23019eb5
