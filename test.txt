@@ -1,1 +1,16 @@
 
+- text: |
+    shopify_app_secret: "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"
+
+- text: X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
+
+
+Mapbox Token
+token = sk.eyJ1IjoiZXJpY2ZvdXJyaWVyIiwiYSI6ImNqb3lkaXJkcTJhZGEzcWxrdzBjYTh0cnUifQ.kqBgVNCrOx9Zj-_aCrPAXw
+Not Mapbox Token
+token = aaaaask.eyJ1IjoiZXJpY2ZvdXJyaWVyIiwiYSI6ImNqb3lkaXJkcTJhZGEzcWxrdzBjYTh0cnUifQ.kqBgVNCrOx9Zj-_aCrPAXwaaaaaaaa
+
+
+PubNub Subscription Key
+SUB_KEY = sub-c-d3ff6da6-faa9-11m5-4160-0679f8943h4f
+sub_key = sub-c-52a9ab50-291b-11e5-baaa-0619f8945a4f
