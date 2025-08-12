@@ -1,1 +1,40 @@
+{
+  #Asana Key - CKV_SECRET_24
+  const ASANA_AUTHORIZATION = \'Bearer 1/1800851236530968:839755caa1e64bea70631a963db663e2\'
+
+  #CKV_SECRET_28
+  Buildkite Agent Token: JAP5HJnZYraRoM2cJS9eo2uC
+  
+  #Mapbox - CKV_SECRET_91
+  access_token - sk.eyJ1IjoiZXJpY2ZvdXJyaWVyIiwiYSI6ImNqb3lkaXJkcTJhZGEzcWxrdzBjYTh0cnUifQ.kqBgVNCrOx9Zj-_aCrPAXw
+  
+  #Square Token - CKV_SECRET_101
+  SQUAREUP_API_KEY = sq0idp-Y7WFLOjXXp00XXXp00_0_A
+  SQUAREUP_API_Token = EAAAEMaLGtOCNqh3giwdE5Blj4FyIciKfc7gUGUGN9vvvsey8gb1vsWdESceuX53
+}
+
+
+AWSTemplateFormatVersion: 2010-09-09
+Description: AWS CloudFormation Template to deploy insecure infrastructure
+
+Resources:
+  AnalysisLambda:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-analysis"
+      Runtime: nodejs12.x
+      Role: !GetAtt IAM4Lambda.Arn
+      Handler: exports.test
+      Code:
+        ZipFile: |
+          console.log("Hello World");
+      Environment:
+        Variables:
+          access_key: "AKIARPIT7QCJZ5BR552T"
+          secret_key: "DSnPnbAH1QwEu+utk4ZWO/c1KlcYT4/1AgaJ5HsXs"
+      Tags:
+        - Key: Name
+          Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-analysis"
+        - Key: Environment
+          Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}"
 
