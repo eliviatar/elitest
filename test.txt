@@ -38,3 +38,17 @@ Resources:
         - Key: Environment
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}"
 
+
+ARG PYTHON_VERSION=3.12
+ARG DOCKER_IO=docker-io.art.code.pan.run
+
+FROM ${DOCKER_IO}/library/python:${PYTHON_VERSION}-slim AS base
+
+RUN apt install first_update_line \
+&& apt update first_update_line
+RUN apt update second_update_line
+RUN apt update third_update_line
+USER bob
+ENV AWS_ACCESS_KEY_ID="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+ENV AWS_SECRET_ACCESS_KEY="AKIAIOSFODNN7EXAMPLE"
+
