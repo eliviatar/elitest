@@ -1,3 +1,4 @@
+
 {
   #Asana Key - CKV_SECRET_24
   const ASANA_AUTHORIZATION = \'Bearer 1/1800851236530968:839755caa1e64bea70631a963db663e2\'
@@ -52,3 +53,31 @@ USER bob
 ENV AWS_ACCESS_KEY_ID="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 ENV AWS_SECRET_ACCESS_KEY="AKIAIOSFODNN7EXAMPLE"
 
+
+
+
+
+{
+  "type": "service_account",
+  "project_id": "green-button-project",
+  "private_key_id": "f5fad24f9ed02e032fcd6b78623d1a8823123abc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIICXQIBAAKBgQCpoq2EpZRNUAT47NmVbAn6L56PMjU2hFgL4P9RrnTnKwEi3rKq\nQJV/330dm6otDWwhGCqgv9jzOAsjJozTCr/mFaRYenzg9lUWPORziUeTOeUPK2fS\nJAZt35bJojVNA3dUhr+qSsvu74v2cD7hhb9rw96EpWaqiXXswF+j+fiCTwIDAQAB\nAoGANkCw/ht2ssNE09fsPr2u8zUHoQSNwEHTZvkurxD8knJOirhuq8S8C4mOmkmO\nw5nnWy4/c+nnmOHzrepGX7iwZoB4Ig+NlShho2WrUvcu6S/DmtHBcCWvuWxpj/OU\ngnn6x1QpF+AzL3tm29Uwidjci/+V4yxq9p/3Q+m089GruAECQQDSPJXpdXpVSVBK\n9TyPccYpWRAXisHv1m0b6kUTqFO6kjMm1gCRH3p/rnCrpiUORSfGEVwk3lFJvzSv\noFdpcl3hAkEAzo+YQw+NDc/UtSyqokOfWkJjp0F8YSK5rcAarJdBzdBmXu40wC7N\nwtdgS60SVi2aBfxqhp0GpfGwPJvDTIYGLwJAIvQPuJDfle5qewvq1a6E07sLAd7/\n/3AXE90PPwVtZkeIWZya24XwR+oosWEeKBE3W6bnOvn7addwWwK9hbqOAQJBALnt\n2SFr6wymqZFXHlSmx9Zn8emIcZvBtR7nz1rRX+MRlkQW6Jagyod6dGxJ4jp+G6kN\ntxlqWKSgc4Fqt5W3AfMCQQCibgU+7SGwXgWPDILCUp8ZcHbDsvmNGzIEt91bO/Jx\nA25IHS03kc5ARosuNympZkOhPEotsnbdNkRdDZsVhTWn\n-----END PRIVATE KEY-----\n",
+  "client_email": "secrets@gitguardian.iam.gserviceaccount.com",
+  "client_id": "111135331340794001234",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/green-button-project%40secrets@gitguardian.iam.gserviceaccount.com"
+}
+{
+  "type": "service_account",
+  "project_id": "sentinel-prod-330423",
+  "private_key_id": "07ad05253f782d60e40acf0974d1188f908456e1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD9cJdYLNAECJDO\nh0yhIw8nHnaHE6GpzvxtNkjWpxNRWSFQBCAdBAsxqHbM5ByrOHIYX1USfz/RCvoZ\nioXjxCjcifw+G5kk+w3a13dgYbrCHlrmlsuaQcfM+xONYJlGy6UZ6qUCRds2o4pZ\nt9NEsFgH6xeBXMjN99dTHPZ620g8PO/c6/mNGInU5eMi3UFxVMmbyZRFuSOk0mMI\nP4y/ZHKqitVJRPTOLttV3fJ+9zHC6WwjLBJFfepM00otiJgxFtAWVKEEIFoSLwVa\nPqAi01BEmqfTyPEIoyYJZGwXin7leqo0MFmvh+FEpBpA/a79SSOaHf2gW0JBYfRg\nUfIEIASjAgMBAAECggEAafKYgjbxms4N4xiykyY53mugtyUgzwEFi45G8t0TeU1e\nXLnsxtR67X50c4Dk7zsAj2nDAaGKhxQkq2q6QBYv0sooVbpp0gjVqOesMvGIBkB0\nVbMyWEEpimpnqRF54hud4HC0HHghhPznCEyNmEhz9JN11xF3rIrwTAFulLt4vh0S\nXZpoCntpUT8fe3z9a814e7dSzrk7UZwHZlnYmpGmpbaM24caUYP8UwihRc2G6eDW\n/vf5NLCHntGP4MLQvsWpPUxJmSCFi3wi5dl0lcNTk8R5I8TeRStVY4cNbI1MYaOj\noE52z3gkWHXrEUxp2SCA9cboZFZsailUO9fWNRjP0QKBgQD++Kdc7dSSoDSpdHMb\noUMN4pLuZvtPxnM4Xiho+GboxPqdluZXsK1VB5ZauSzYYsF5rMCJJPkWrauu/4cg\nRA1SqiB5ea5Tm7lE/TaVruWQVpzXhbEc0ECZ5yPVfNqRB7fe4kFVUmtIatPOmTiJ\nyYjnozMRuR2Hl1X3eQ2mEkuyqQKBgQD+dlsKe0u95teyjPyGEXNsTmvzeOjFzETc\n6wUpgr0gucGkeHbyeiGNkOJ/Da+LKDmBfoy5ZthNyHaV0pE9wORM482aoy2Xmroz\n4AqkzklwqbHuZAht97Cv0fa5RkZ7U7YORV1xw9KHOOWJ/0EaRhvXxkrRfDmZ9FgV\nHMBusiiYawKBgQCFNeQ66QbmlEzvO6foB5jA6F9brvId+9C24nq6XQ1nD4LgUraF\nmgj1I8GqJJUJeI8cwuTUwjxhXNsV0usGMIfFaJ0O2kP56qIhKSobigTmJFpNP8wJ\nAcS+o8RVBaYrn5yxFgSMT0M90pJWnjarxl+ApgNIfy6uaKLBaL14xpZGAQKBgQCJ\nfcP1ZudnBZsYk8tCWZ2HMNxtYrBLZ/Lxd1+DrWupihUSXDDRFaKZjmaDhg6K30Ir\nMQiyiNppNN62V185AceZsCEA5BiXaPghXXYC1J+j610D1TMk0Ae9CHMKaulca7/b\n+Cjkdo2DmP+Vz8EKhEU5EqCMjlXFVNxfE/j6FvOOXwKBgFOFO1InFJGIVBZDFP5Y\ngGsCeGZp52WHOFGEQEjzvTQMzHcj95X+ia4zvdovxu008iGybO/WOp+TF6zzOLDl\nSuA+2zhgEnhqqZfUQQSJJe8o9DiDqGJHwOVLXzQ8232Q7iKP2smKZvqoa47FApWr\ntMJnqqhtjaDuqT6CTivDERQV\n-----END PRIVATE KEY-----\n",
+  "client_email": "donald-test-sa@sentinel-prod-330423.iam.gserviceaccount.com",
+  "client_id": "108383904721678862054",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/donald-test-sa%40sentinel-prod-330423.iam.gserviceaccount.com"
+}
