@@ -81,3 +81,13 @@ ENV AWS_SECRET_ACCESS_KEY="AKIAIOSFODNN7EXAMPLE"
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/donald-test-sa%40sentinel-prod-330423.iam.gserviceaccount.com"
 }
+
+
+CKV_SECRET_232
+-----BEGIN PGP PRIVATE KEY BLOCK-----
+Version: BCPG C# v1.6.1.0
+
+mQENBFvpYakBCACibZLLmzTZD5DFydo2JQ
+bVY+0m1aO1G1+xyzABC123==
+lQOsBFvpYakBCACibZLLmzTZD5DFydo2JQ
+-----END PGP PRIVATE KEY BLOCK-----
