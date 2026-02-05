@@ -1,0 +1,3 @@
+
+curl -H "Authorization: Bearer 680a50ad-ad6b-485a-bf6b-e11d22e3dad2" \
+https://api.vapi.ai/call
