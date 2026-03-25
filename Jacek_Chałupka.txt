@@ -1,1 +1,4 @@
-const ASANA_AUTHORIZATION = \'Bearer 1/aa00851236530968:839755caa1e64bea70631a963db663bb\'
+duo
+Integration key - DIZNPGXV08VCLQ3VA3YY
+Secret key - AUbZeSKu6xousAvSyIsbWqtgZoqVPh38ZE6SA4BB
+Api hostname - api-d55e5e18.duosecurity.com
