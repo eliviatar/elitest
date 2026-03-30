@@ -1,0 +1,7 @@
+
+"elasticsearch": {
+-
+"url": "http://localhost:9200/",
++
+"url": "https://elastic:p92iamsUdFsNGn6JMo1OlHHH@802gg6d7798255c586aa8es2f1f6d855.eu-central-1.aws.cloud.es.io:9243/",
+"index": "polyglot-test"}
