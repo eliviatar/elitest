@@ -3,3 +3,48 @@
 
 
 BRAVESEARCH_API_KEY=BSAaa_ik9paksjfhgjfzazSHRJFvETx
+
+
+
+# Data - DataPlatform - Dagster
+
+resource "vault_generic_secret" "data_dataplatform_postgresql_dagster_db" {
+  path = "platform/${var.region}/data/dataplatform/postgresql/dagster/db"
+
+  data_json = <<EOT
+{
+  "host": "postgresql-dagster.dataplatform.data.${var.region}.${local.env}.xbaws.com",
+  "port": "${data.aws_rds_cluster.data_dataplatform_postgresql_dagster.port}",
+  "database": "${postgresql_database.data_dataplatform_dagster.name}"
+}
+EOT
+}
+
+resource "postgresql_role" "data_dataplatform_dagster" {
+  name            = data.vault_generic_secret.data_dataplatform_postgresql_dagster_user.data["username"]
+  login           = true
+  password        = data.vault_generic_secret.data_dataplatform_postgresql_dagster_user.data["password"]
+  create_database = "false"
+}
+
+resource "postgresql_database" "data_dataplatform_dagster" {
+  name             = "dagster"
+  owner            = postgresql_role.data_dataplatform_dagster.name
+  template         = "template0"
+  lc_collate       = "en_US.UTF-8"
+  lc_ctype         = "en_US.UTF-8"
+  encoding         = "UTF8"
+  connection_limit = -1
+}
+
+resource "postgresql_grant" "data_dataplatform_dagster" {
+  role        = postgresql_role.data_dataplatform_dagster.name
+  database    = postgresql_database.data_dataplatform_dagster.name
+  schema      = "public"
+  object_type = "table"
+  privileges  = ["ALL"]
+
+  lifecycle {
+    ignore_changes = [privileges] # FIXME: https://github.com/cyrilgdn/terraform-provider-postgresql/issues/303
+  }
+}
