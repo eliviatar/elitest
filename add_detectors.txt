@@ -1,0 +1,45 @@
+#FTP
+"content": 'sftp_config:\n host: "124.112.5.13"\n  username: "root"\n  password: "kjlrtq2017-long3r.th@nusu@l"\n port: 22',
+
+
+# Databricks Authentication Token With Hostname detected in code (432 occurrences)
+
+## Issue ID 75041
+"Debug: API post call: https://engie-discover-sandbox.cloud.databricks.com/api/2.0/sql/statements\n",
+
+## Issue ID 39399
+1. Comment out the `deployment_name` parameter to create a workspace with the default URL: `dbc-XXXXXX.cloud.databricks.com`.
+
+## Issue ID 4650
+echo "host          = https://accounts.cloud.databricks.com" >> ~/.databrickscfg
+
+## Issue ID 232365
+<setting name="Databricks_Host" serializeAs="String">
+    <value>adb-5021934780918072.12.azuredatabricks.net</value>
+</setting>
+
+
+
+regular URI: postgresql://user:pass@host:5432/db postgresql://admin:secret@db.example.com:5432/app ✔️ should detect
+
+JDBC: jdbc:postgresql://host:5432/db jdbc:postgresql://user:pass@db.example.com:5432/app ✔️ should detect
+
+DRIVER extended: postgresql+psycopg2://user:pass@host/db postgresql+psycopg2://admin:secret@localhost/mydb ✔️ should detect
+
+DSN (libpq style): host=db.example.com port=5432 dbname=app user=admin password=secret sslmode=require host=127.0.0.1 dbname=mydb user=postgres password=toor host=localhost dbname=prod user=root password=123456 host=10.0.0.5 port=5432 dbname=main user=admin password=p@ssw0rd sslmode=disable ✔️ should detect
+
+Socket: host=/var/run/postgresql dbname=mydb user=postgres host=/tmp/pg.sock dbname=app user=admin ❌ should NOT detect (no password)
+
+IAC - False positive - not catch: host = var.db_host user = var.db_user dbname = var.db_name host = data.postgres.host user = local.user dbname = var.db ❌ should NOT detect
+
+JSON - not catch: {"host":"localhost","user":"postgres","password":"secret"} {"db":{"host":"localhost","user":"postgres","password":"secret"}} ❌ should NOT detect
+
+ENV / template - not catch: POSTGRES_PASSWORD=${DB_PASSWORD} DATABASE_URL=postgresql://user:${PASS}@host/db ❌ should NOT detect
+
+
+# Brave Search API Key detected in code (248,720 occurrences)
+
+## Issue ID 121932
+<value name="IRTNODE_PROPERTY">CwQAAAABBQEEGQBjAG8AbQAuAHcAbQAuAGQAYQB0AGEALgBJAFMATQBlAG0ARABhAHQAYQBJAG0AcABsBBMAcwBlAHIAdgBpAGMAZQBUAGUAbQBwAGwAYQB0AGUATgBhAG0AZQQoAGMAbwBtAC4AdwBtAC4AYQBkAGEAcAB0AGUAcgAuAHcAbQBqAGQAYgBjAC4AcwBlAHIAdgBpAGMAZQBzAC4AQwB1AHMAdABvAG0AUwBRAEwEDgBjAG8AbgBuAGUAYwB0AGkAbwBuAE4AYQBtAGUEJwBCAEEAVABfAE0AbwBjAGsAXwBEAGUAbQBvAF8AQwBvAG4AbgBlAGMAdABpAG8AbgAuAGMAbgB4ADoAYwBvAG4AbgBlAGMAdABpAG8AbgQSAHQAZQBtAHAAbABhAHQAZQBQAHIAbwBwAGUAcgB0AGkAZQBzBQEAAgQQAGQAZQBzAGkAZwBuAFQAaQBtAGUATABvAGMAYQBsAGUE**********AB1AHQAUABhAHMAcwB3AG8AcgBkAFMAaQBnAG4EHwBvAHYAZQByAHIAaQBkAGUAQwByAGUAZABlAG4AdABpAGEAbABzAC4AJABkAGIAUABhAHMAcwB3AG8AcgBkBAwAcABhAHMAcwB3AG8AcgBkAFQAeQBwAGUEEABqAGEAdgBhAC4AbABhAG4AZwAuAFMAdAByAGkAbgBnBAgAcABhAHMAcwB3AG8AcgBkAA0EDwBpAG4AcAB1AHQAVQBzAGUAcgBpAGQAUwBpAGcAbgQbAG8AdgBlAHIAcgBpAGQAZQBDAHIAZQBkAGUAbgB0AGkAYQBsAHMA**********QBzAGUAcgBpAGQAVAB5AHAAZQAPBAYAdQBzAGUAcgBpAGQAEwQSAHIAZQBzAHUAbAB0AFIAbwB3AEYAaQBlAGwAZABUAHkAcABlBBEAagBhAHYAYQAuAGwAYQBuAGcALgBJAG4AdABlAGcAZQByBA4AcgBlAHMAdQBsAHQA**********ABxAHUAZQByAHkAVABpAG0AZQBPAHUAdAsE/////wQGAG0AYQB4AFIAbwB3CwQAAAAABA8AcgBlAGEAbABPAHUAdABwAHUAdABGAGkAZQBsAGQK**********wBbAF0ALgBwAHIAaQBjAGUECwByAGUAcwB1AGwAdABGAGkAZQBsAGQK**********ABGAGkAZQBsAGQK**********gBlAHMAdQBsAHQA**********QAPBBIAagBhAHYAYQAuAGwAYQBuAGcALgBTAHQAcgBpAG4AZwBbAF0EDwBvAHUAdABwAHUAdABGAGkAZQBsAGQA**********QB0AHAAdQB0AEoARABCAEMAVAB5AHAAZQoBAA8EBwBJAE4AVABFAEcARQBSBBAAbwB1AHQAcAB1AHQARQB4AHAAcgBlAHMAcwBpAG8AbgoAAA8EEABvAHUAdABwAHUAdABDAG8AbABJAG4AZABlAHgAZQBzCgEADwQBADAEDwByAGUAYQBsAEkA**********woBAA8EAgBpAGQECgBpAG4AcAB1AHQARgBpAGUAbABkCgEADwBCBA4AaQBuAHAAdQB0AEYAaQBlAGwAZABUAHkAcABlCgEADwAPBA0AaQBuAHAAdQB0AEoARABCAEMAVAB5AHAAZQoBAA8ANwQPAGkAbgBwAHUAdABFAHgAcAByAGUAcwBzAGkAbwBuCgAADwQPAGkAbgBwAHUAdABDAG8AbABJAG4AZABlAHgAZQBzCgEADwA+BAcAYwBvAGwASQBuAGYAbwQuADAAOwBlAG0AcABsAG8A**********QBHAEUAUgA7AEkATgA7AAoAMAA7AHAAcgBpAGMAZQA7AEkATgBUAEUARwBFAFIAOwBPAFUAVAA7AAoEDABzAHEAbABGAGkAZQBsAGQA**********ABzAGUAbABlAGMAdAAgAHAAcgBpAGMAZQAgAGYAcgBvAG0AIABmAGEAYwB0AHUAcgBlAHMAIAB3AGgAZQByAGUAIABlAG0AcABsAG8A**********wIABBkAYQBkAGEAcAB0AGUAcgBTAGUAcgB2AGkAYwBlAE4AbwBkAGUAVgBlAHIAcwBpAG8AbgsEAAAAAgQLAGEAZABhAHAAdABlAHIAVAB5AHAAZQQLAEoARABCAEMAQQBkAGEAcAB0AGUAcgQPAGkAbgBwAHUAdABSAGUA**********wBlAGwAZQBjAHQARgBhAGMAdAB1AHIAZQBJAG4AcAB1AHQEEABvAHUAdABwAHUAdABSAGUA**********wBlAGwAZQBjAHQARgBhAGMAdAB1AHIAZQBPAHUAdABwAHUAdAIA</value>
+
+
