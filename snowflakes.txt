@@ -1,0 +1,16 @@
+
+connection_parameters = (
+
+"snowflake_account" :
+"jdtcusj-je76351" ,
+
+"snowflake_user" :
+"JTAAvbuMi2" ,
+
+"snowflake_password" :
+"nwZj1oIre5ABCnt0BeEU" ,
+
+"snowflake_role" :
+"account_admin",)
+account: jdtsfsj-je12345
+user: JTAAvbuMi2
