@@ -1,0 +1,176 @@
+# This is a Databricks asset bundle definition for dbx_template_poc.
+# See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
+bundle:
+  name: es_bundle_r2p
+
+include:
+  - resources/*.yml
+
+variables:
+  job_clusters:
+    description: Job clusters configuration
+  schedule_status: 
+    description: Status of the schedule
+    default: PAUSED
+  timeout_seconds:
+    description: Timeout in seconds for the tasks
+    default: 1800
+  threshold_seconds:
+    description: Threshold in seconds for the tasks
+    default: 1500
+  catalog_name:
+    description: This is the name of the catalog to be written to
+    default: gbuesdatabricksref
+  s3_bucket_name:
+    description: This is the name of the s3 bucket to be written to
+    default: cdh-gbuesdatabricksref-771674
+  databricks_group_name:
+    description: This is the name of the databricks group of users that can view jobs
+    default: esf-leia-owner-dev
+  task_libraries:
+    description: Shared Python libraries installed for all job tasks
+    default:
+      - pypi:
+          package: croniter==3.0.3
+      - pypi:
+          package: cron_descriptor==1.4.5
+
+targets:
+  # The 'dev' target, for development purposes. This target is the default.
+  dev:
+    mode: development
+    default: true
+    presets:
+      name_prefix: '[${workspace.current_user.userName}] dev_'
+      tags:
+        applicationEnv: dev
+        Category: projet
+        DevTeam: data-leai
+        Direction: Leai
+        Dashboard: test
+        applicationId: 0117c8cd-7ed6-40ec-b8fb-bb9bf0fca346
+        applicationName: gpcLeia
+    variables:
+      job_clusters: 
+        - job_cluster_key: "job_cluster_leia"
+          new_cluster:
+            policy_id: "000F8DBB6A73D660"
+            spark_version: "16.4.x-scala2.12"
+            node_type_id: "rd-fleet.xlarge"
+            driver_node_type_id: "rd-fleet.xlarge"
+            autoscale:
+              min_workers: 1
+              max_workers: 2
+      schedule_status: 
+        description: Status of the schedule
+        default: PAUSED
+      timeout_seconds:
+          description: Timeout in seconds for the tasks
+          default: 1800
+      threshold_seconds:
+          description: Threshold in seconds for the tasks
+          default: 1500
+      catalog_name:
+          description: This is the name of the catalog to be written to
+          default: esnoprodref
+      s3_bucket_name:
+          description: This is the name of the s3 bucket to be written to
+          default: cdh-gbuesdatabricksref-771674
+      databricks_group_name:
+          description: This is the name of the databricks group of users that can view jobs
+          default: esf-leia-owner-dev
+    workspace:  
+      host: https://dbc-455d39b0-3cd9.cloud.databricks.com
+
+  no-prod:
+    presets:
+      name_prefix: 'no_prod_'
+      tags:
+        applicationEnv: no-prod
+        Category: projet
+        DevTeam: data-leai
+        Direction: Leai
+        Dashboard: Monitoring
+        applicationId: 0117c8cd-7ed6-40ec-b8fb-bb9bf0fca346
+        applicationName: gpcLeia
+    variables:
+      job_clusters: 
+        - job_cluster_key: "job_cluster_leia"
+          new_cluster:
+            policy_id: "000F8DBB6A73D660"
+            spark_version: "16.4.x-scala2.12"
+            node_type_id: "rd-fleet.xlarge"
+            driver_node_type_id: "rd-fleet.xlarge"
+            autoscale:
+              min_workers: 1
+              max_workers: 2
+      schedule_status: 
+          description: Status of the schedule
+          default: PAUSED
+      timeout_seconds:
+          description: Timeout in seconds for the tasks
+          default: 1800
+      threshold_seconds:
+          description: Threshold in seconds for the tasks
+          default: 1500
+      catalog_name:
+          description: This is the name of the catalog to be written to
+          default: esnoprodref
+      s3_bucket_name:
+          description: This is the name of the s3 bucket to be written to
+          default: cdh-gbuesdatabricksref-771674
+      databricks_group_name:
+          description: This is the name of the databricks group of users that can view jobs
+          default: esf-leia-owner-dev
+    workspace:  
+      host: https://dbc-455d39b0-3cd9.cloud.databricks.com
+
+
+  # The 'prod' target, used for production deployment.
+  prod:
+    # We use 'mode: production' to indicate this is a production deployment.
+    # Doing so enables strict verification of the settings below.
+    mode: production
+    presets:
+      name_prefix: 'prod_'
+      tags:
+        applicationEnv: prod
+        Category: projet
+        DevTeam: data-leai
+        Direction: Leai
+        Dashboard: Monitoring
+        applicationId: 0117c8cd-7ed6-40ec-b8fb-bb9bf0fca346
+        applicationName: gpcLeia
+    variables:
+      job_clusters: 
+        - job_cluster_key: "job_cluster_leia"
+          new_cluster:
+            policy_id: "0014C06D9E46638E"
+            spark_version: "16.4.x-scala2.12"
+            node_type_id: "rd-fleet.xlarge"
+            driver_node_type_id: "rd-fleet.xlarge"
+            autoscale:
+              min_workers: 1
+              max_workers: 2
+      schedule_status:
+        description: Status of the schedule
+        default: UNPAUSED
+      timeout_seconds:
+        description: Timeout in seconds for the tasks
+        default: 1800
+      threshold_seconds:
+        description: Threshold in seconds for the tasks
+        default: 1500
+      catalog_name:
+        description: This is the name of the catalog to be written to
+        default: esprodref
+      s3_bucket_name:
+          description: This is the name of the s3 bucket to be written to
+          default: cdh-gbuesproddatabricksref-771674
+      databricks_group_name:
+          description: This is the name of the databricks group of users that can view jobs
+          default: esf-leia-reader-prod
+    workspace:
+      host: https://dbc-bde8fe8d-84ba.cloud.databricks.com
+      root_path: /Users/${workspace.current_user.userName}/.bundle/${bundle.name}/${bundle.target}
+
