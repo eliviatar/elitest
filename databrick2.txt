@@ -1,0 +1,485 @@
+[
+  {
+    "name": "url_api.gouv.fr",
+    "value": [
+      "https://portail-conseiller-dmpr-recette.mydcpcloud.com:10443"
+    ]
+  },
+  {
+    "name": "url_biblos",
+    "value": [
+      "https://portail-conseiller-dmpr-recette.mydcpcloud.com:10443"
+    ]
+  },
+  {
+    "name": "url_purecloud",
+    "value": [
+      "https://portail-conseiller-dmpr-recette.mydcpcloud.com:10443"
+    ]
+  },
+  {
+    "name": "url_cabestan",
+    "value": [
+      "https://portail-conseiller-dmpr-recette.mydcpcloud.com:10443"
+    ]
+  },
+  {
+    "name": "url_declic",
+    "value": [
+      "https://portail-conseiller-dmpr-recette.mydcpcloud.com:10443"
+    ]
+  },
+  {
+    "name": "url_dqe",
+    "value": [
+      "https://portail-conseiller-dmpr-recette.mydcpcloud.com:10443"
+    ]
+  },
+  {
+    "name": "url_hubeone",
+    "value": [
+      "https://portail-conseiller-dmpr-recette.mydcpcloud.com:10443"
+    ]
+  },
+  {
+    "name": "url_omega",
+    "value": [
+      "https://portail-conseiller-dmpr-recette.mydcpcloud.com:10443"
+    ]
+  },
+  {
+    "name": "url_rapsodie_ventes",
+    "value": [
+      "https://portail-conseiller-dmpr-recette.mydcpcloud.com:10443"
+    ]
+  },
+  {
+    "name": "url_rve",
+    "value": [
+      "https://ecc.rec.rapsodie.myengie.com:443"
+    ]
+  },
+  {
+    "name": "url_bill_in",
+    "value": [
+      "https://s4.acc.bill-in.dcp.myengie.com"
+    ]
+  },
+  {
+    "name": "url_sge",
+    "value": [
+      "https://portail-conseiller-dmpr-recette.mydcpcloud.com:10443"
+    ]
+  },
+  {
+    "name": "url_cloudref",
+    "value": [
+      "https://ip-10-199-174-174.eu-west-1.compute.internal"
+    ]
+  },
+  {
+    "name": "url_cloudref_v2",
+    "value": [
+      "https://cloudref-rec-internal.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_isi",
+    "value": [
+      "https://engie-dmpr1-dt5.pegacloud.net"
+    ]
+  },
+  {
+    "name": "url_isi_v2",
+    "value": [
+      "https://engie-dmpr1-dt5.pegacloud.net"
+    ]
+  },
+  {
+    "name": "url_tessi",
+    "value": [
+      "https://api-re.digitalinvoice.tessi.eu"
+    ]
+  },
+  {
+    "name": "url_docusign",
+    "value": [
+      "https://demo.docusign.net"
+    ]
+  },
+  {
+    "name": "url_docker_consommation",
+    "value": [
+      "https://ms-dame-pfdata-dataconso-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_docker_envoi_email",
+    "value": [
+      "https://ms-dame-acoustic-envoi-email-rec.mydcpcloud.com"
+    ]
+  },
+    {
+    "name": "url_espaceclient",
+    "value": [
+      "https://portail-conseiller-dmpr-recette.mydcpcloud.com:10443"
+    ]
+  },
+  {
+  "name": "url_mypower",
+  "value": [
+    "https://mypower--preprod.sandbox.my.salesforce-sites.com"
+    ]
+  },
+  {
+    "name": "url_myPowerData",
+    "value": [
+      "https://mypower--preprod.my.salesforce.com"
+    ]
+  },
+  {
+    "name": "url_moteurdenotification",
+    "value": [
+      "https://portail-conseiller-dmpr-recette.mydcpcloud.com:10443"
+    ]
+  },
+  {
+    "name": "url_docker_envoi_sms",
+    "value": [
+      "https://ms-dame-acoustic-envoi-sms-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_docker_recevoir_compte_rendu",
+    "value": [
+      "https://ms-dame-rgpd-acquittement-rgpdisi-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_docker_mapping_fusion_ged",
+    "value": [
+      "https://ms-dame-dame-mapping-fusion-ged-rec.mydcpcloud.com/mappingFusionGED"
+    ]
+  },
+  {
+    "name": "url_docker_validation_email",
+    "value": [
+      "https://ms-dame-acoustic-validation-email-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_docker_okta_users",
+    "value": [
+      "https://ms-dame-okta-okta-users-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_docker_audit_wso2",
+    "value": [
+      "http://audit-wso2:80"
+    ]
+  },
+  {
+    "name": "url_docker_audit_wso2_first",
+    "value": [
+      "http://audit-wso2-first:80"
+    ]
+  },
+  {
+    "name": "url_docker_audit_wso2_second",
+    "value": [
+      "http://audit-wso2-second:80"
+    ]
+  },
+  {
+    "name": "url_docker_audit_wso2_third",
+    "value": [
+      "http://audit-wso2-third:80"
+    ]
+  },
+  {
+    "name": "url_360learning",
+    "value": [
+      "https://app.staging.360learning-dev.com"
+    ]
+  },
+  {
+    "name": "url_docker_challengeenergie",
+    "value": [
+      "https://ms-dame-pfdata-challenge-energie-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_docker_boucliertarifaire",
+    "value": [
+      "https://ms-dame-pfdata-bouclier-tarifaire-rds-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_docker_ecodefi",
+    "value": [
+      "https://ms-dame-pfdata-ecodefi-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_docker_puissance",
+    "value": [
+      "https://ms-dame-pfdata-puissance-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_docker_beneficialowners",
+    "value": [
+      "https://ms-dame-okta-inpi-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_docker_rte",
+    "value": [
+      "https://ms-dame-okta-rte-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_docker_validation_phone",
+    "value": [
+      "https://ms-dame-acoustic-validation-phone-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_sdv",
+    "value": [
+      "https://webservicestest-isi.ventespap.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_docker_notification_biblos",
+    "value": [
+      "https://ms-dame-dame-notification-biblos-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_databricks",
+    "value": [
+      "https://dcp-pfdata-noprod.cloud.databricks.com"
+    ]
+  },
+  {
+    "name": "url_oscom",
+    "value": [
+      "https://oscom-v2-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_paiement_cb_svi",
+    "value": [
+      "https://ms-dame-dame-paiement-svi-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_notification_cb_svi",
+    "value": [
+      "https://ms-dame-dame-notification-svi-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_pappers",
+    "value": [
+      "https://ms-dame-okta-pappers-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_bee",
+    "value": [
+      "https://ms-dame-bee-form-publisher-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_bee_insert_bilan",
+    "value": [
+      "https://ms-dame-bee-insert-bilan-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_base_contact",
+    "value": [
+      "https://ms-dame-dame-base-contact-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_genesysAccordVocal",
+    "value": [
+      "https://ms-dame-purecloud-genesys-accord-vocal-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_createACallBack",
+    "value": [
+      "https://ms-dame-purecloud-create-acall-back-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_getEstimatedWaitTime",
+    "value": [
+      "https://ms-dame-purecloud-get-estimated-wait-time-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_getTheMembersOfTheQueue",
+    "value": [
+      "https://ms-dame-purecloud-get-members-of-the-queue-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_documentAffichage",
+    "value": [
+      "https://ms-dame-biblos-document-affichage-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_commandeInterventionPourImpaye",
+    "value": [
+      "https://ms-dame-enedis-cmd-intervention-pour-impaye-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_commandeSouscription",
+    "value": [
+      "https://ms-dame-enedis-commande-souscription-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_consultationAffaire",
+    "value": [
+      "https://ms-dame-enedis-consultation-affaire-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_consultationMesures",
+    "value": [
+      "https://ms-dame-enedis-consultation-mesures-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_commandeModificationContractuelle",
+    "value": [
+      "https://ms-dame-enedis-cmd-modif-contract-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_consultationPoint",
+    "value": [
+      "https://ms-dame-enedis-consultation-point-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_recherchePoint",
+    "value": [
+      "https://ms-dame-enedis-recherche-point-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_creerDemandeCHF",
+    "value": [
+      "https://ms-dame-grdf-creer-demande-chf-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_rechercherPCEAdresse",
+    "value": [
+      "https://ms-dame-grdf-rechercher-pce-adresse-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_recupererDonneesPCE",
+    "value": [
+      "https://ms-dame-grdf-recuperer-donnees-pce-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_suiviDemande",
+    "value": [
+      "https://ms-dame-grdf-suivi-demande-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_creerDemandeMES",
+    "value": [
+      "https://ms-dame-grdf-creer-demande-mes-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_creerDemandeRETB",
+    "value": [
+      "https://ms-dame-grdf-creer-demande-retb-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_notificationCB_publisher",
+    "value": [
+      "https://ms-dame-dame-notif-cb-publisher-rec.mydcpcloud.com"
+    ]
+  },
+  {
+
+    "name": "url_eks_normalisationAdresses",
+    "value": [
+      "https://ms-dame-dame-normalisation-adresse-rec.mydcpcloud.com"
+    ]
+  },
+  {
+
+    "name": "url_eks_objectifConso",
+    "value": [
+      "https://ms-dame-pfdata-objectif-conso-rec.mydcpcloud.com"
+    ]
+  },
+  {
+
+    "name": "url_eks_consoHoraire",
+    "value": [
+      "https://ms-dame-pfdata-conso-horaire-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_priseRdv",
+    "value": [
+      "https://ms-dame-pfdata-prise-rdv-rec.mydcpcloud.com"
+    ] 
+  },
+  {
+    "name": "url_eks_rechercherPCEAdresse",
+    "value": [
+      "https://ms-dame-grdf-rechercher-pce-adresse-rec.mydcpcloud.com"
+    ] 
+  },
+  {
+    "name": "url_eks_grdf_demande",
+    "value": [
+      "https://ms-dame-grdf-creer-demande-chdt-rec.mydcpcloud.com"
+    ]
+  },
+  {
+    "name": "url_eks_commandeServiceAccesDonnees",
+    "value": [
+      "https://ms-dame-enedis-cmd-service-acces-donnees-rec.mydcpcloud.com"
+    ] 
+  },
+  {
+    "name": "url_eks_commandeRenouvellementServicesAccesDonnees",
+    "value": [
+      "https://ms-dame-enedis-cmd-rnv-acces-donnees-rec.mydcpcloud.com"
+    ] 
+  },
+  {
+    "name": "url_eks_biblos_publisher",
+    "value": [
+      "https://ms-dame-biblos-biblos-publisher-rec.mydcpcloud.com"
+    ] 
+  },
+  {
+    "name": "url_eks_otp",
+    "value": [
+      "https://ms-dame-dame-otp-rec.mydcpcloud.com"
+    ]
+  }
+]
