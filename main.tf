@@ -1,3 +1,4 @@
+
 # This Terraform configuration is intentionally misconfigured to trigger CKV_AWS_79.
 # It is used for testing the XSUP-71494 fix — verifying that the evidence highlights
 # the `http_tokens = "optional"` line (the actual misconfiguration) rather than the
