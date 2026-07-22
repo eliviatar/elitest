@@ -26,6 +26,13 @@
               "Purpose": "CKV_AWS_79 evidence line-number validation",
               "Environment": "test"
             }
+          },
+          "sensitive_values": {
+            "metadata_options": [
+              {}
+            ],
+            "tags": {},
+            "tags_all": {}
           }
         }
       ]
@@ -75,6 +82,14 @@
           "public_ip": true,
           "subnet_id": true,
           "vpc_security_group_ids": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "metadata_options": [
+            {}
+          ],
+          "tags": {},
+          "tags_all": {}
         }
       }
     }
