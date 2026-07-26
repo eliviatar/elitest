@@ -19,7 +19,12 @@
                 "http_endpoint": "enabled",
                 "http_put_response_hop_limit": 1,
                 "http_tokens": "optional"
-              }
+              },
+              {
+                "http_endpoint": "enabled",
+                "http_put_response_hop_limit": 2,
+                "http_tokens": "optional"
+              },
             ],
             "tags": {
               "Name": "xsup-71494-test-instance",
