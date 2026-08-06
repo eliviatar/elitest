@@ -1,0 +1,198 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.5.0",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_default_vpc.this",
+          "mode": "managed",
+          "type": "aws_default_vpc",
+          "name": "this",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "assign_generated_ipv6_cidr_block": false,
+            "enable_dns_hostnames": true,
+            "enable_dns_support": true,
+            "tags": {
+              "Name": "Default VPC",
+              "Environment": "test"
+            }
+          },
+          "sensitive_values": {
+            "tags": {},
+            "tags_all": {}
+          }
+        },
+        {
+          "address": "aws_iam_user.admin",
+          "mode": "managed",
+          "type": "aws_iam_user",
+          "name": "admin",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 0,
+          "values": {
+            "name": "admin-user",
+            "path": "/",
+            "force_destroy": false,
+            "tags": {
+              "Department": "Engineering"
+            }
+          },
+          "sensitive_values": {
+            "tags": {},
+            "tags_all": {}
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "aws_default_vpc.this",
+      "mode": "managed",
+      "type": "aws_default_vpc",
+      "name": "this",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "assign_generated_ipv6_cidr_block": false,
+          "enable_dns_hostnames": true,
+          "enable_dns_support": true,
+          "tags": {
+            "Name": "Default VPC",
+            "Environment": "test"
+          },
+          "tags_all": {
+            "Name": "Default VPC",
+            "Environment": "test"
+          }
+        },
+        "after_unknown": {
+          "arn": true,
+          "cidr_block": true,
+          "default_network_acl_id": true,
+          "default_route_table_id": true,
+          "default_security_group_id": true,
+          "dhcp_options_id": true,
+          "id": true,
+          "instance_tenancy": true,
+          "ipv6_association_id": true,
+          "ipv6_cidr_block": true,
+          "main_route_table_id": true,
+          "owner_id": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "tags": {},
+          "tags_all": {}
+        }
+      }
+    },
+    {
+      "address": "aws_iam_user.admin",
+      "mode": "managed",
+      "type": "aws_iam_user",
+      "name": "admin",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "name": "admin-user",
+          "path": "/",
+          "force_destroy": false,
+          "tags": {
+            "Department": "Engineering"
+          },
+          "tags_all": {
+            "Department": "Engineering"
+          }
+        },
+        "after_unknown": {
+          "arn": true,
+          "id": true,
+          "unique_id": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "tags": {},
+          "tags_all": {}
+        }
+      }
+    }
+  ],
+  "configuration": {
+    "provider_config": {
+      "aws": {
+        "name": "aws",
+        "full_name": "registry.terraform.io/hashicorp/aws",
+        "expressions": {
+          "region": {
+            "constant_value": "us-east-1"
+          }
+        }
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_default_vpc.this",
+          "mode": "managed",
+          "type": "aws_default_vpc",
+          "name": "this",
+          "provider_config_key": "aws",
+          "expressions": {
+            "assign_generated_ipv6_cidr_block": {
+              "constant_value": false
+            },
+            "enable_dns_hostnames": {
+              "constant_value": true
+            },
+            "enable_dns_support": {
+              "constant_value": true
+            },
+            "tags": {
+              "constant_value": {
+                "Name": "Default VPC",
+                "Environment": "test"
+              }
+            }
+          },
+          "schema_version": 1
+        },
+        {
+          "address": "aws_iam_user.admin",
+          "mode": "managed",
+          "type": "aws_iam_user",
+          "name": "admin",
+          "provider_config_key": "aws",
+          "expressions": {
+            "name": {
+              "constant_value": "admin-user"
+            },
+            "path": {
+              "constant_value": "/"
+            },
+            "force_destroy": {
+              "constant_value": false
+            },
+            "tags": {
+              "constant_value": {
+                "Department": "Engineering"
+              }
+            }
+          },
+          "schema_version": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.5.0",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_instance.example",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "example",
+          "provider_name": "registry.terraform.io/hashicorp/aws",
+          "schema_version": 1,
+          "values": {
+            "ami": "ami-0c55b159cbfafe1f0",
+            "instance_type": "t2.micro",
+            "metadata_options": [
+              {
+                "http_endpoint": "enabled",
+                "http_put_response_hop_limit": 1,
+                "http_tokens": "optional",
+                "instance_metadata_tags": "disabled"
+              }
+            ],
+            "tags": {
+              "Name": "test-instance"
+            }
+          },
+          "sensitive_values": {
+            "metadata_options": [{}],
+            "tags": {},
+            "tags_all": {}
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "aws_instance.example",
+      "mode": "managed",
+      "type": "aws_instance",
+      "name": "example",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": ["create"],
+        "before": null,
+        "after": {
+          "ami": "ami-0c55b159cbfafe1f0",
+          "instance_type": "t2.micro",
+          "metadata_options": [
+            {
+              "http_endpoint": "enabled",
+              "http_put_response_hop_limit": 1,
+              "http_tokens": "optional",
+              "instance_metadata_tags": "disabled"
+            }
+          ],
+          "tags": {
+            "Name": "test-instance"
+          }
+        },
+        "after_unknown": {
+          "arn": true,
+          "id": true,
+          "metadata_options": [{}],
+          "tags_all": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "metadata_options": [{}],
+          "tags": {},
+          "tags_all": {}
+        }
+      }
+    }
+  ],
+  "configuration": {
+    "provider_config": {
+      "aws": {
+        "name": "aws",
+        "full_name": "registry.terraform.io/hashicorp/aws",
+        "expressions": {
+          "region": {
+            "constant_value": "us-east-1"
+          }
+        }
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "aws_instance.example",
+          "mode": "managed",
+          "type": "aws_instance",
+          "name": "example",
+          "provider_config_key": "aws",
+          "expressions": {
+            "ami": {
+              "constant_value": "ami-0c55b159cbfafe1f0"
+            },
+            "instance_type": {
+              "constant_value": "t2.micro"
+            },
+            "metadata_options": {
+              "constant_value": [
+                {
+                  "http_endpoint": "enabled",
+                  "http_put_response_hop_limit": 1,
+                  "http_tokens": "optional",
+                  "instance_metadata_tags": "disabled"
+                }
+              ]
+            },
+            "tags": {
+              "constant_value": {
+                "Name": "test-instance"
+              }
+            }
+          },
+          "schema_version": 1
+        }
+      ]
+    }
+  }
+}
